@@ -5,10 +5,12 @@ window.addEventListener("load", init);
   function init() {
 
     console.log('page loaded');
-    
+
+  //Asynchronous
     let demobtn1 = document.getElementById("demo-btn1");
     demobtn1.addEventListener("click", clickHandler);
 
+   // Synchronous 
     disableMenu();
     showMenu();
 }
