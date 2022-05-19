@@ -10,13 +10,19 @@ window.addEventListener("load", init);
     demobtn1.addEventListener("click", clickHandler);
 
     disableMenu();
+    showMenu();
 }
 
+function showMenu() {
+  let outputtext2 = document.getElementById("output-text2");
+  outputtext2.classList.remove('hidden');
+}
   
 function disableMenu() {
   let outputtext2 = document.getElementById("output-text2");
   outputtext2.classList.add('hidden');
 }
+
 
 function clickHandler() {
   let outputtext1 = document.getElementById("output-text1");
